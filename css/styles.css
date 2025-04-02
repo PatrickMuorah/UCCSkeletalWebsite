@@ -1,0 +1,426 @@
+/*  
+Author: Patrick Muorah
+File Name: styles.css
+Date: 03/13/2023
+*/
+
+/* CSS RESET */
+body, header, nav, main, footer, img, h1, h3, ul, article, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*  Style rules to show mobile class and hide tab-desk class */
+.mobile {
+  display: block;
+}
+
+.tab-desk, .desktop, #menu-links {
+  display: none;
+}
+
+/* Style rule for body and images */
+body {
+  background-color: yellow;
+}
+
+/* Style rule for header */
+header {
+  top: 0;
+  height: 120px;
+  text-align: center;
+
+}
+
+/* Style rule for h1 and h3 */
+h1 {
+  font-size: 2em;
+  padding: 2%;
+  font-family: 'Orbitron', sans-serif;
+  font-style: oblique;
+  color: darkblue;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+  color: black;
+  padding: 2%;
+}
+
+/* Style rule for navigation area */
+.mobile-nav a {
+  color: darkblue;
+  text-align: center;
+  border-top: 0.5px solid blue;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+  font-weight: bold;
+  font-family: Geneva, Arial, sans-serif;
+}
+
+.mobile-nav a .nav-icon {
+  display: block;
+  position: absolute;
+  right: 0; 
+  top: 0;  
+}
+
+.nav-icon div {
+  height: 50px;
+  width: 50px;
+}
+
+/* Style rule for image */
+img {
+  float: right;
+  max-width: 100%;
+  display: block;
+}
+
+img , main {
+  display: inline-block;
+}
+
+/* Style rules for main content */
+main {
+  background-color: lightyellow;
+  padding: 2%;
+  font-size: 1.25em;
+  overflow: auto;
+  font-family:'Lora', serif;
+}
+
+main ul {
+  list-style-type: disc;
+}
+
+/* Style rules for class and id selectors */
+#info ul {
+  margin-left: 5%;
+}
+
+#contact {
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+  border: 1px solid blue;
+  box-shadow: 3px 2px lightblue;
+}
+
+
+/* Style rules for form */
+fieldset, input, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit {
+  margin: 0 auto 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: yellow;
+  color: blue;
+  font-size: 1.25em;
+  border-radius: 10px;
+  border-color: blue;
+}
+
+.tel-link {
+  background-color: blue;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.touch {
+  font-family: 'Tangerine', cursive;
+  color: darkblue;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.external-link {
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.map {
+  border: 2px solid #000;
+  width: 95%;
+  height: 50%;
+}
+
+.about {
+  font-family: 'Tangerine', cursive;
+  color: darkblue;
+  font-weight: bolder;
+}
+
+/* Style rule for footer */
+footer {
+  clear: both;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.85em;
+  color: darkblue;
+  padding: 1% 0%;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: darkblue;
+}
+
+.social img {
+  display: inline-block;
+  padding: 4%;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {  
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */  
+  .tab-desk {
+    display: block;
+  } 
+  .mobile, .mobile-nav {
+    display: none;  
+  }
+
+  /* Tablet Viewport: Style rule for header */
+  header {
+    position: static;
+    padding-bottom: 2%;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding: 2% 2% 0 2%;
+    font-family: 'Orbitron', sans-serif;
+    font-style: oblique;
+    color: darkblue;
+  }
+  
+  h3 {
+    font-family: 'Lora', serif;
+    color: black;
+    padding: 1%;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav {
+    padding-bottom: 2%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  nav li {
+  border-top: none;
+  display: inline-block;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  border-left: 1px solid blue;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li:first-child {
+    border-left: none;
+  }
+
+  nav li a {
+    display: block;
+    color: darkblue;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.2em 0.75em;
+  }
+
+  /* Tablet Viewport: Style rules for main content area */
+  .thecontact {
+    width: 100%;
+  }  
+
+  /* Tablet Viewport: Style rule for form element */
+  form {
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+
+  .tel-num {
+    font-size: 1.25em;
+  }
+
+  .map {
+    width: 600px;
+    height: 450px;
+  }
+
+   /* Style rules for table */
+   table {
+    text-align: center;
+    border: 1px solid blue;
+    border-collapse: collapse;
+    margin: 0 auto 0 auto;
+  }
+
+  caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th {
+    border: 1px solid blue;
+    padding: 1%;
+    background-color: yellow;
+    color: blue;
+    font-size: 1.1em;
+  }
+  
+  td {
+    border: 1px solid blue;
+    padding: 1%;
+  }
+
+}
+
+/* Tablet Viewport: Style rule for footer element */
+footer {
+  overflow: auto;
+}
+
+.copyright {
+  float: left;
+  width: 65%;
+}
+
+.social {
+  padding-left: 5px;
+  float: right;
+  width: 25%;
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+  .desktop {
+    display: block;
+  }
+
+  /*  Desktop Viewport: Style rule for form */
+  form {
+    width: auto;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn {
+    grid-column: 1 / span 2;
+  }
+
+  /*  Desktop Viewport: Style rule for header */
+  header {
+    width: 25%;
+    float: left;
+    margin: 2em 0 0 1.75em;
+  }
+
+ h1 a:active {
+  color: yellow;
+ }
+
+ h1 a:hover {
+  color: #000;
+ }
+
+  header nav {
+    display: inline-block;
+  }
+
+  /*  Desktop Viewport: Style rule for nav area */
+  nav {
+    width: 70%;
+    float: right;
+    margin: 3em 0 0 0;
+  }
+
+  nav ul {
+    margin: 0;
+    text-align: right;
+  }
+
+  nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    border: none;
+  }
+
+  nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.5em 0.5em;
+  }
+
+  nav li a:hover {
+    color: yellow;
+    background-color: blue;
+    transform: scale(1.25);
+  }
+
+  nav li a:active {
+    opacity: 0.7;
+  }
+
+  /*  Desktop Viewport: Style rule for main content */
+  .map {
+    border: 8px solid #000;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+}
+
+/* Media Query for Print */ 
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
