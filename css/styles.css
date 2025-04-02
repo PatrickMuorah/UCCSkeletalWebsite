@@ -1,7 +1,7 @@
 /*  
 Author: Patrick Muorah
 File Name: styles.css
-Date: 03/13/2023
+Date: 02/04/2025
 */
 
 /* CSS RESET */
@@ -22,7 +22,7 @@ body, header, nav, main, footer, img, h1, h3, ul, article, section {
 
 /* Style rule for body and images */
 body {
-  background-color: yellow;
+  background-color: white;
 }
 
 /* Style rule for header */
@@ -53,7 +53,7 @@ h3 {
   color: darkblue;
   text-align: center;
   border-top: 0.5px solid blue;
-  font-size: 1.5em;
+  font-size: 0.5em;
   text-decoration: none;
   padding: 3%;
   display: block;
@@ -353,15 +353,36 @@ footer {
   }
 
   /*  Desktop Viewport: Style rule for header */
+
+  .top-section {
+    display: flex;
+    justify-content: space-between; /* Align content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 5px 0px -100px 0px; /* Add spacing inside the section */
+    background-color: #003366; /* Dark blue background */
+    color: white; /* White text color */
+    border-radius: none; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    margin-bottom: none;
+}
+
   header {
     width: 25%;
     float: left;
-    margin: 2em 0 0 1.75em;
+    margin: 12px 0px 0px 0px;
   }
 
- h1 a:active {
-  color: yellow;
- }
+  .logo {
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+  header h1 {
+    color: white;
+  }
 
  h1 a:hover {
   color: #000;
@@ -371,39 +392,49 @@ footer {
     display: inline-block;
   }
 
-  /*  Desktop Viewport: Style rule for nav area */
-  nav {
-    width: 70%;
-    float: right;
-    margin: 3em 0 0 0;
-  }
+ /* Desktop Viewport: Style rule for nav area */
+nav {
+  width: 70%;
+  float: right;
+  margin: 0px 0px 80px 0px;
+  background-color: #003366; /* Blue background for nav area */
+  border-radius: 8px; /* Optional: Rounded corners for nav */
+  padding: 10px; /* Padding inside the nav bar */
+}
 
-  nav ul {
-    margin: 0;
-    text-align: right;
-  }
+nav ul {
+  margin: 0;
+  text-align: right;
+  list-style: none; /* Remove bullet points */
+}
 
-  nav li {
-    display: inline-block;
-    font-size: 1.5em;
-    border: none;
-  }
+nav li {
+  display: inline-block;
+  font-size: 0.9em;
+  border: none;
+  margin: 0 10px; /* Add spacing between buttons */
+}
 
-  nav li a {
-    display: block;
-    text-align: center;
-    padding: 0.5em 0.5em;
-  }
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 0.2em 0.2em; /* Button padding for better size */
+  color: blue; /* White text */
+  background-color: #ffffff; /* Button background */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth transition for hover */
+}
 
-  nav li a:hover {
-    color: yellow;
-    background-color: blue;
-    transform: scale(1.25);
-  }
+nav li a:hover {
+  color: black;
+  background-color: blue;
+  transform: scale(1.25);
+}
 
-  nav li a:active {
-    opacity: 0.7;
-  }
+nav li a:active {
+  opacity: 0.7;
+}
 
   /*  Desktop Viewport: Style rule for main content */
   .map {
