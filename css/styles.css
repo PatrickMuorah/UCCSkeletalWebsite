@@ -973,6 +973,82 @@ body {
   background-color: #002244; /* Darker blue on hover */
 }
 
+/* Register Page General Styling */
+.register-body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Register Page Styling */
+.register-page {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Adjust width to fit the side-by-side layout */
+}
+
+.register-page h1 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.register-form {
+  display: grid; /* Use grid for side-by-side alignment */
+  grid-template-columns: 150px auto; /* Labels take 150px, inputs take remaining space */
+  gap: 10px; /* Add space between rows */
+  align-items: center; /* Align labels and inputs vertically */
+}
+
+.form-group {
+  display: contents; /* Allows proper alignment within the grid */
+}
+
+.register-form label {
+  font-size: 1em;
+  color: #333;
+  text-align: right; /* Align labels to the right */
+}
+
+.register-form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Stretch inputs to fit the available space */
+}
+
+.register-form input::placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+.register-button {
+  grid-column: span 2; /* Button spans across both columns */
+  padding: 10px;
+  font-size: 1.1em;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #002244;
+}
+
+
+
 /* Footer styling */
 .footer {
   background-color: #003366; /* Blue background */
