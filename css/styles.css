@@ -906,6 +906,73 @@ body {
   background-color: #002244; /* Darker blue on hover */
 }
 
+/* Main Login Page */
+.login-body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.login-page {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-page h1 {
+  font-size: 2em;
+  color: #003366; /* Blue heading color */
+  margin-bottom: 20px;
+}
+
+/* Login Form Styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between inputs and button */
+}
+
+.login-form label {
+  font-size: 1em;
+  color: #333; /* Dark grey for labels */
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make inputs stretch the full width */
+}
+
+.login-form input::placeholder {
+  font-style: italic;
+  color: #999; /* Light grey for placeholder text */
+}
+
+.login-button {
+  padding: 10px;
+  font-size: 1.1em;
+  background-color: #003366; /* Blue background */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #002244; /* Darker blue on hover */
+}
+
 /* Footer styling */
 .footer {
   background-color: #003366; /* Blue background */
