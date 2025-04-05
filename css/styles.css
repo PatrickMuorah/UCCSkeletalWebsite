@@ -875,6 +875,37 @@ body {
   text-align: center;
 }
 
+.sign-in-page {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set fixed width for the container */
+}
+
+/* Buttons Styling */
+.action-buttons {
+  display: flex;
+  justify-content: space-between; /* Space between the two buttons */
+  gap: 10px; /* Add space between buttons */
+}
+
+.action-buttons button {
+  flex: 1; /* Ensure buttons take up equal space */
+  padding: 10px;
+  font-size: 1em;
+  background-color: #003366; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background-color: #002244; /* Darker blue on hover */
+}
+
 /* Footer styling */
 .footer {
   background-color: #003366; /* Blue background */
