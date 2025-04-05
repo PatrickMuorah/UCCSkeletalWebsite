@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+Student Name: Patrick Muorah
+File Name: template.html
+Date 31/03/2025
+-->
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Orbitron:wght@900&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css"> 
+</head>
+
+<body> 
+
+	<!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="nav-links">
+				<a href="index.html">Home</a>
+				<a href="health.html">Health</a>
+				<a href="fitness.html">Fitness</a>
+				<a href="diet.html">Diet</a>
+				<a href="discussion.html">Discussion Board</a>
+				<a href="help.html">Help</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="signIn.html">Sign In</a>
+		
+		</div>
+				<a class="nav-icon" onclick="menu()">
+					<div id="icon">&#9776;</div>
+				</a>
+	</nav>
+
+	
+	<!--Contains Name, Logo and Mission Statement-->
+	<div class="top-section">
+		<header>
+			<h1><a href="index.html" class="logo">Wellness Hub</a></h1>
+		</header>
+		
+		<!--Links to navigate the website-->
+		<nav class="tab-desk">
+		
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="health.html">Health</a></li>
+				<li><a href="fitness.html">Fitness</a></li>
+				<li><a href="diet.html">Diet</a></li>
+				<li><a href="discussion.html">Discussion Board</a></li>
+				<li><a href="help.html">Help</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="signIn.html">Sign In</a></li>
+			</ul> 
+
+		</nav>
+	</div>
+
+	<!--Contain main information about the page-->
+	<main class="discussion-page">
+    <section class="disc-top-section">
+			<h2>Discussion Board</h2>
+			<div class="topics">
+					<button>Topic 1</button>
+					<button>Topic 2</button>
+					<button>Topic 3</button>
+			</div>
+			<form class="search-form">
+					<input type="text" class="search-input" placeholder="Search for Topics">
+					<button type="submit" class="search-button">Search</button>
+			</form>
+	</section>
+
+    <!-- Posts Section -->
+    <section class="posts-section">
+        <div class="post">
+            <h2>Discussion Title 1</h2>
+            <p>Category - 3 days ago</p>
+            <p>Posted by: User1</p>
+            <p>Brief overview of the topic being discussed. Placeholder content for alignment and design.</p>
+        </div>
+        <div class="post">
+            <h2>Discussion Title 2</h2>
+            <p>Category - 7 days ago</p>
+            <p>Posted by: User2</p>
+            <p>Brief overview of the topic being discussed. Placeholder content for alignment and design.</p>
+        </div>
+        <div class="post">
+            <h2>Discussion Title 3</h2>
+            <p>Category - 2 days ago</p>
+            <p>Posted by: User3</p>
+            <p>Brief overview of the topic being discussed. Placeholder content for alignment and design.</p>
+        </div>
+    </section>
+</main>
+
+	
+	<!--Contain contact and copyright information-->
+	<footer class="footer">
+		<div class="newsletter">
+			<p>SIGN UP FOR OUR NEWSLETTER</p>
+			<form>
+				<input type="email" placeholder="Enter your email address" class="email-input">
+				<button type="submit" class="subscribe-button">Subscribe</button>
+			</form>
+		</div>
+		<div class="footer-note">
+			<p>&copy;2025 Wellness Hub LLC. All rights reserved. Wellness Hub does not provide medical advice, diagnosis, or treatment.</p>
+		</div>
+	</footer>	
+	<script src="scripts/script.js"></script>
+</body>
+</html>
