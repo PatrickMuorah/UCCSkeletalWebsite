@@ -335,6 +335,9 @@ footer {
     display: block;
   }
 
+  a {
+    text-decoration: none;
+  }
   /*  Desktop Viewport: Style rule for form */
   form {
     width: auto;
@@ -768,7 +771,109 @@ body {
   color: #666;
 }
 
+/* Contact Page General Styling */
+.contact-page {
+  display: flex; /* Arrange sections side by side */
+  justify-content: space-between; /* Add space between the two sections */
+  align-items: flex-start; /* Align sections at the top */
+  gap: 20px; /* Space between the sections */
+  margin: 0 auto;
+  max-width: 1200px; /* Restrict maximum width for layout */
+  padding: 20px; /* Add padding inside the container */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
 
+/* Contact Information Section */
+.contact-info {
+  flex: 1; /* Allow this section to take up equal space */
+  max-width: 45%; /* Set a maximum width to balance with the form */
+  text-align: left;
+}
+
+.contact-info h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact-info h2 {
+  font-size: 1.5em;
+  color: #003366;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.info-details {
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  flex: 1; /* Allow this section to take up equal space */
+  max-width: 45%; /* Set a maximum width to balance with the contact info */
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-form button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #002244;
+}
+
+.contact-text {
+  text-align: center;
+}
 
 /* Footer styling */
 .footer {

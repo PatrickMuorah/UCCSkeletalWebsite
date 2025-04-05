@@ -11,6 +11,7 @@ Date 31/03/2025
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Orbitron:wght@900&family=Tangerine:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body> 
@@ -57,11 +58,44 @@ Date 31/03/2025
 		</nav>
 	</div>
 	<!--Contain main information about the page-->
-	<main>
-    <div>
-	
-    </div>  
-	</main>
+	<main class="contact-page">
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+			<div class="contact-text">
+        <h2>Contact Us</h2>
+        <h1>Get In Touch</h1>
+				<h1>Today</h1>
+        <p>Our team of professionals is happy to answer your questions and receive feedback!</p>
+        <div class="info-details">
+            <div class="info-item">
+								<i class="fa-solid fa-envelope"></i>
+                <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+            </div>
+            <div class="info-item">
+							<i class="fa-solid fa-phone"></i>
+							<p>Phone: XXX-XXX-XXXX</p>
+      		</div>
+				</div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Leave Us Your Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
 	
 	<!--Contain contact and copyright information-->
 	<footer class="footer">
