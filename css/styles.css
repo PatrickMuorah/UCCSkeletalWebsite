@@ -546,11 +546,15 @@ body {
 
 
 .middle-section {
-  display: flex; /* Align image and text side by side */
-  justify-content: space-between; /* Space between the elements */
-  align-items: center; /* Align vertically */
-  padding: 20px; /* Add spacing inside the section */
-  gap: 20px; /* Space between image and text */
+  display: flex; /* Arrange children side-by-side */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 80%; /* Adjust width to fit most of the page */
+  margin: 0 auto; /* Center on the page */
+  padding: 20px; /* Add space inside the box */
+  border: 2px solid #ccc; /* Add a border around the section */
+  border-radius: 10px; /* Make the corners rounded */
+  background-color: #f9f9f9; /* Add background color */
 }
 
 .image-container {
@@ -560,11 +564,11 @@ body {
 .image-container img {
   width: 100%; /* Make image responsive */
   border-radius: 10px; /* Optional: Rounded corners for the image */
+  float: left;
 }
 
-.text-container {
-  flex: 2; /* Adjust text container width */
-  color: #333; /* Set text color */
+.text-container { 
+  color: black; /* Set text color */
 }
 
 .text-container h2 {
